@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light">
+    <a routerLink="/mayank" routerLinkActive="active" class="navbar-brand">Github</a>
+    <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="50px"height="40px">
+    <form class="form-inline">
+      <input #mySearch class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button (click)="searchEvent(mySearch.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+<router-outlet></router-outlet>
