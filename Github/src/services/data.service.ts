@@ -12,7 +12,7 @@ export class DataService {
   options = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'token ca590bad4bb3ef8177deb5c18e5f5f2ee3fff809'
+      'Authorization': 'token 0de497d26b1cc73097d37f0c2e4cc465ee8d3b2f'
     })
   }
   newRepository(obj) {
