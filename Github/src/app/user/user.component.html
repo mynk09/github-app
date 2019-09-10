@@ -1,14 +1,22 @@
 <html>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
+    <style>
+      .card-body{ height: 120px; 
+
+      }
+    </style>
+    
 <div *ngFor="let repo of repos" class="card">
   <div class="card-body">
-    <p>{{repo.full_name}}</p>
-    <a href="{{repo.html_url}}">{{repo.html_url}}</a>
+    <p>Name:{{repo.full_name}}</p>
+    <a href="{{repo.html_url}}">url:{{repo.html_url}}</a>
     <button (click)="detailsEvent(repo.full_name)" class="btn btn-primary">Details</button>
     <button (click)="deleteEvent(repo.full_name)" class="btn btn-outline-danger">
       Delete
     </button>
+    
+    
   </div>
 </div>
 

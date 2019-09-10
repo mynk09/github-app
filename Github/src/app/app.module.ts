@@ -12,13 +12,15 @@ import { UserComponent } from './user/user.component';
 import { UsersearchComponent } from './usersearch/usersearch.component';
 import { SearchService } from 'src/services/search.service';
 import { DataService } from 'src/services/data.service';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RepoDetailsComponent,
     UserComponent,
-    UsersearchComponent
+    UsersearchComponent,
+    PagenotfoundComponent
     ],
   imports: [
     BrowserModule,
